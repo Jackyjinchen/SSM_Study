@@ -40,4 +40,14 @@ public class StudentController {
 
     }
 
+    @RequestMapping("/redirect.do")
+    public ModelAndView listStudent(){
+
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("redirect:http://baidu.com");
+
+        return mv;
+
+    }
+
 }

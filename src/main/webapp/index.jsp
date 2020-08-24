@@ -28,6 +28,9 @@
                 <td><a href="listStudent.jsp">浏览学生</a></td>
             </tr>
         </table>
+        <form action="student/redirect.do" method="post">
+            <input type="submit" value="百度一下">
+        </form>
     </div>
 </body>
 </html>
