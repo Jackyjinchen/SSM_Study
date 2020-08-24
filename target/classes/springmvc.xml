@@ -12,13 +12,9 @@
 >
 
     <!--组件扫描-->
-    <context:component-scan base-package="com.jacky"/>
+    <context:component-scan base-package="com.jacky.Controller"/>
 
-    <!--MVC注解驱动@ResponseBody
-    1、响应ajax请求
-    2、解决静态资源访问问题
-    -->
-    <mvc:annotation-driven/>
+
 
     <!--视图解析器路径-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -26,5 +22,10 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
+    <!--MVC注解驱动@ResponseBody
+        1、响应ajax请求
+        2、解决静态资源访问问题
+        -->
+    <mvc:annotation-driven/>
 
 </beans>
