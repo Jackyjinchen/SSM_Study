@@ -23,7 +23,7 @@
                     type: "post",
                     dataType: "json",
                     success: function (resp) {
-                        // alert(resp.name + "   " + resp.age);
+                        alert(resp.name + "   " + resp.age);
                     }
                 })
             });

@@ -17,13 +17,13 @@
                 $.ajax({
                     url: "user/returnvoid.do",
                     data: {
-                        name: "zhangsan",
+                        name: "lisi",
                         age: 20,
                     },
                     type: "post",
                     dataType: "json",
                     success: function (resp) {
-                        // alert(resp.name + "   " + resp.age);
+                        alert(resp.name + "   " + resp.age);
                     }
                 })
             });

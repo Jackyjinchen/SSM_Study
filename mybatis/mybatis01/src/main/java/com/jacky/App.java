@@ -16,8 +16,6 @@ public class App {
 
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         StudentDao dao = sqlSession.getMapper(StudentDao.class);
-
-
         //执行语句
         List<Student> studentList = dao.selectStudent();
 
